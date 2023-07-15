@@ -8,7 +8,26 @@
 */
 
 function isAnagram(str1, str2) {
+  let l1 = str1.length;
+  let l2 = str2.length;
+  if(l1 !== l2){
+    console.log("Invalid input");
+    return
+  }
+  s1 = str1.split('').sort().join('');
+  s2 = str2.split('').sort().join('');
+
+  if(str1 == str2){
+    console.log("Given strings are anagram");
+  }
+  else{
+    console.log("Given strings are not anagram");
+  }
 
 }
+
+isAnagram("paper","repap");
+
+
 
 module.exports = isAnagram;
