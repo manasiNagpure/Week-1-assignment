@@ -15,6 +15,7 @@ function calculateTotalSpentByCategory(transactions) {
   
   for (const transaction of transactions) {
     const { category, price } = transaction;
+    
     if (!categoryTotals[category]) {
       categoryTotals[category] = price;
     } else {
